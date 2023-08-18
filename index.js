@@ -1,23 +1,53 @@
-const TelegramApi = require('node-telegram-bot-api')
+const { Telegraf, Markup } = require('telegraf');
+const { message } = require('telegraf/filters');
+require('dotenv').config();
 
-const token = '6629872442:AAEXnAO-YnA9ndsZWt1RpGHm6CGHODYt03Q';
-const options = { polling: true };
-const bot = new TelegramApi(token, options);
+const text = require('./const')
 
-bot.setMyCommands([
-    {command: '/start', description:'Вітання'},
-    {command: '/info', description:'Вітання користувача'},
-])
+const bot = new Telegraf(process.env.BOT_TOKEN);
+bot.start((ctx) => ctx.reply(`Hello ${ctx.message.from.first_name ? ctx.message.from.first_name : 'Incognito'}!`));
+bot.help((ctx) => ctx.reply(text.commands));
 
-bot.on('message', async msg => { 
-    const text = msg.text;
-    const chatId = msg.chat.id;
-    // bot.sendMessage(chatId, `це ти написав ${text}?`)  
-    if (text === '/start') {
-        await bot.sendMessage(chatId,'https://chpic.su/_data/stickers/k/kontrmera/kontrmera_012.webp?v=1692166022')
-        await bot.sendMessage(chatId, 'Sup')
-    } 
-    if (text === '/info') {
-        await bot.sendMessage(chatId,  `Hello ${msg.from.first_name} ${msg.from.last_name}`);
+bot.command('course', async (ctx) => {
+    try {
+        await ctx.replyWithHTML('<b>Lesson one</b>', Markup.inlineKeyboard(
+             [
+                 [Markup.button.callback('Edit', 'btn_1'), Markup.button.callback('mb later', 'btn_2')],
+                 [Markup.button.callback('go home', 'btn_3'), Markup.button.callback('too late', 'btn_4'), Markup.button.callback('good by', 'btn_5')]
+             ]
+        ))
+        
+    } catch (e) {
+        console.error(e)
     }
 })
+
+function addActionBot(name, src, text) {
+    bot.action(name, async (ctx)=>{
+    try {
+        await ctx.answerCbQuery()
+        if (src !==false) {
+        await ctx.replyWithPhoto({
+            source: src
+        })
+    }
+        await ctx.replyWithHTML(text, {
+            disable_web_page_preview: true
+        })
+    }  catch (e) {
+        console.error(e)
+    }
+    })
+}
+addActionBot('btn_1', './img/1.jpg', text.text1);
+addActionBot('btn_2', './img/2.jpg', text.text2)
+addActionBot('btn_3', false, text.text3)
+
+
+bot.launch();
+
+
+
+// Enable graceful stop
+process.once('SIGINT', () => bot.stop('SIGINT'));
+process.once('SIGTERM', () => bot.stop('SIGTERM'));
