@@ -1,8 +1,10 @@
+on: [push]
+
+name: self-hosted-example
+
 jobs:
-  my_job:
+  simpleExample:
     runs-on: self-hosted
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-      - name: Run my command
-        run: ./my-script.sh
+    # checkout branch
+    - uses: actions/checkout@master
