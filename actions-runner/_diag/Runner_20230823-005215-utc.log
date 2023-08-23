@@ -186,3 +186,39 @@
 [2023-08-23 01:00:16Z INFO JobDispatcher] job renew has been cancelled, stop renew job request 20.
 [2023-08-23 01:00:16Z INFO JobNotification] Entering JobCompleted Notification
 [2023-08-23 01:00:16Z INFO JobNotification] Entering EndMonitor
+[2023-08-23 01:04:07Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\Project\tel-bot\actions-runner\.credentials_rsaparams
+[2023-08-23 01:04:07Z INFO MessageListener] Message '3' received from session 'a10eb0d7-0ca0-44cd-8be1-ad95cd7c5b1a'.
+[2023-08-23 01:04:07Z INFO Runner] Received job message of length 21617 from service, with hash '53ff9d9751653c213a376e92574cc396bfb83547ab73b1dcb2c677c0044663ef'
+[2023-08-23 01:04:07Z INFO JobDispatcher] Job request 21 for plan 32e76d95-1a3e-44f4-9005-15ccd5eb47a4 job 56fe6a69-41e4-51a9-8be0-82e5646b8f77 received.
+[2023-08-23 01:04:07Z INFO JobDispatcher] Pull OrchestrationId 32e76d95-1a3e-44f4-9005-15ccd5eb47a4.simpleexample.__default from JWT claims
+[2023-08-23 01:04:07Z INFO JobDispatcher] Job request 56fe6a69-41e4-51a9-8be0-82e5646b8f77 processed succeed.
+[2023-08-23 01:04:07Z INFO Terminal] WRITE LINE: 2023-08-23 01:04:07Z: Running job: simpleExample
+[2023-08-23 01:04:07Z INFO JobDispatcher] Start renew job request 21 for job 56fe6a69-41e4-51a9-8be0-82e5646b8f77.
+[2023-08-23 01:04:07Z INFO JobDispatcher] Successfully renew job request 21, job is valid till 23.08.2023 1:14:54
+[2023-08-23 01:04:07Z INFO HostContext] Well known directory 'Bin': 'D:\Project\tel-bot\actions-runner\bin'
+[2023-08-23 01:04:07Z INFO ProcessInvokerWrapper] Starting process:
+[2023-08-23 01:04:07Z INFO ProcessInvokerWrapper]   File name: 'D:\Project\tel-bot\actions-runner\bin\Runner.Worker.exe'
+[2023-08-23 01:04:07Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 2256 2412'
+[2023-08-23 01:04:07Z INFO ProcessInvokerWrapper]   Working directory: 'D:\Project\tel-bot\actions-runner\bin'
+[2023-08-23 01:04:07Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2023-08-23 01:04:07Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-08-23 01:04:07Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2023-08-23 01:04:07Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-08-23 01:04:07Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-08-23 01:04:07Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-08-23 01:04:07Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2023-08-23 01:04:07Z INFO ProcessInvokerWrapper] Process started with process id 16008, waiting for process exit.
+[2023-08-23 01:04:07Z INFO JobDispatcher] Send job request message to worker for job 56fe6a69-41e4-51a9-8be0-82e5646b8f77.
+[2023-08-23 01:04:07Z INFO ProcessChannel] Sending message of length 21617, with hash '53ff9d9751653c213a376e92574cc396bfb83547ab73b1dcb2c677c0044663ef'
+[2023-08-23 01:04:08Z INFO JobNotification] Entering JobStarted Notification
+[2023-08-23 01:04:08Z INFO JobNotification] Entering StartMonitor
+[2023-08-23 01:04:16Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-08-23 01:04:16Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-08-23 01:04:16Z INFO ProcessInvokerWrapper] Finished process 16008 with exit code 100, and elapsed time 00:00:08.6042970.
+[2023-08-23 01:04:16Z INFO JobDispatcher] Worker finished for job 56fe6a69-41e4-51a9-8be0-82e5646b8f77. Code: 100
+[2023-08-23 01:04:16Z INFO JobDispatcher] finish job request for job 56fe6a69-41e4-51a9-8be0-82e5646b8f77 with result: Succeeded
+[2023-08-23 01:04:16Z INFO Terminal] WRITE LINE: 2023-08-23 01:04:16Z: Job simpleExample completed with result: Succeeded
+[2023-08-23 01:04:16Z INFO JobDispatcher] Stop renew job request for job 56fe6a69-41e4-51a9-8be0-82e5646b8f77.
+[2023-08-23 01:04:16Z INFO JobDispatcher] job renew has been cancelled, stop renew job request 21.
+[2023-08-23 01:04:16Z INFO JobNotification] Entering JobCompleted Notification
+[2023-08-23 01:04:16Z INFO JobNotification] Entering EndMonitor
