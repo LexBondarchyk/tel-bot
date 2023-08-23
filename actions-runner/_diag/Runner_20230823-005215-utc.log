@@ -140,3 +140,49 @@
 [2023-08-23 00:52:21Z INFO ProcessChannel] Sending message of length 20886, with hash 'be80aa19db1696a15e1d9737e60ff2a7b7e91dee4d1464dceba88b46c519120b'
 [2023-08-23 00:52:21Z INFO JobNotification] Entering JobStarted Notification
 [2023-08-23 00:52:21Z INFO JobNotification] Entering StartMonitor
+[2023-08-23 00:53:14Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-08-23 00:53:14Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-08-23 00:53:14Z INFO ProcessInvokerWrapper] Finished process 13764 with exit code 100, and elapsed time 00:00:53.5217769.
+[2023-08-23 00:53:14Z INFO JobDispatcher] Worker finished for job 56fe6a69-41e4-51a9-8be0-82e5646b8f77. Code: 100
+[2023-08-23 00:53:14Z INFO JobDispatcher] finish job request for job 56fe6a69-41e4-51a9-8be0-82e5646b8f77 with result: Succeeded
+[2023-08-23 00:53:14Z INFO Terminal] WRITE LINE: 2023-08-23 00:53:14Z: Job simpleExample completed with result: Succeeded
+[2023-08-23 00:53:14Z INFO JobDispatcher] Stop renew job request for job 56fe6a69-41e4-51a9-8be0-82e5646b8f77.
+[2023-08-23 00:53:14Z INFO JobDispatcher] job renew has been cancelled, stop renew job request 16.
+[2023-08-23 00:53:14Z INFO JobNotification] Entering JobCompleted Notification
+[2023-08-23 00:53:14Z INFO JobNotification] Entering EndMonitor
+[2023-08-23 01:00:06Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\Project\tel-bot\actions-runner\.credentials_rsaparams
+[2023-08-23 01:00:06Z INFO MessageListener] Message '2' received from session 'a10eb0d7-0ca0-44cd-8be1-ad95cd7c5b1a'.
+[2023-08-23 01:00:06Z INFO Runner] Received job message of length 20886 from service, with hash '0757760c3eb9d4b0d3f4a18572e569240b2c4ea396b7f2da2857776b3b36b28a'
+[2023-08-23 01:00:06Z INFO JobDispatcher] Job request 20 for plan 5ee63f5b-fb9a-415a-b120-d0b204cffe6d job 56fe6a69-41e4-51a9-8be0-82e5646b8f77 received.
+[2023-08-23 01:00:06Z INFO JobDispatcher] Pull OrchestrationId 5ee63f5b-fb9a-415a-b120-d0b204cffe6d.simpleexample.__default from JWT claims
+[2023-08-23 01:00:06Z INFO JobDispatcher] Job request 56fe6a69-41e4-51a9-8be0-82e5646b8f77 processed succeed.
+[2023-08-23 01:00:06Z INFO Terminal] WRITE LINE: 2023-08-23 01:00:06Z: Running job: simpleExample
+[2023-08-23 01:00:06Z INFO JobDispatcher] Start renew job request 20 for job 56fe6a69-41e4-51a9-8be0-82e5646b8f77.
+[2023-08-23 01:00:06Z INFO JobDispatcher] Successfully renew job request 20, job is valid till 23.08.2023 1:10:53
+[2023-08-23 01:00:06Z INFO HostContext] Well known directory 'Bin': 'D:\Project\tel-bot\actions-runner\bin'
+[2023-08-23 01:00:06Z INFO ProcessInvokerWrapper] Starting process:
+[2023-08-23 01:00:06Z INFO ProcessInvokerWrapper]   File name: 'D:\Project\tel-bot\actions-runner\bin\Runner.Worker.exe'
+[2023-08-23 01:00:06Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 2360 1980'
+[2023-08-23 01:00:06Z INFO ProcessInvokerWrapper]   Working directory: 'D:\Project\tel-bot\actions-runner\bin'
+[2023-08-23 01:00:06Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2023-08-23 01:00:06Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-08-23 01:00:06Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2023-08-23 01:00:06Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-08-23 01:00:06Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-08-23 01:00:06Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-08-23 01:00:06Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2023-08-23 01:00:06Z INFO ProcessInvokerWrapper] Process started with process id 3980, waiting for process exit.
+[2023-08-23 01:00:06Z INFO JobDispatcher] Send job request message to worker for job 56fe6a69-41e4-51a9-8be0-82e5646b8f77.
+[2023-08-23 01:00:06Z INFO ProcessChannel] Sending message of length 20886, with hash '0757760c3eb9d4b0d3f4a18572e569240b2c4ea396b7f2da2857776b3b36b28a'
+[2023-08-23 01:00:07Z INFO JobNotification] Entering JobStarted Notification
+[2023-08-23 01:00:07Z INFO JobNotification] Entering StartMonitor
+[2023-08-23 01:00:16Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-08-23 01:00:16Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-08-23 01:00:16Z INFO ProcessInvokerWrapper] Finished process 3980 with exit code 100, and elapsed time 00:00:09.7028022.
+[2023-08-23 01:00:16Z INFO JobDispatcher] Worker finished for job 56fe6a69-41e4-51a9-8be0-82e5646b8f77. Code: 100
+[2023-08-23 01:00:16Z INFO JobDispatcher] finish job request for job 56fe6a69-41e4-51a9-8be0-82e5646b8f77 with result: Succeeded
+[2023-08-23 01:00:16Z INFO Terminal] WRITE LINE: 2023-08-23 01:00:16Z: Job simpleExample completed with result: Succeeded
+[2023-08-23 01:00:16Z INFO JobDispatcher] Stop renew job request for job 56fe6a69-41e4-51a9-8be0-82e5646b8f77.
+[2023-08-23 01:00:16Z INFO JobDispatcher] job renew has been cancelled, stop renew job request 20.
+[2023-08-23 01:00:16Z INFO JobNotification] Entering JobCompleted Notification
+[2023-08-23 01:00:16Z INFO JobNotification] Entering EndMonitor
